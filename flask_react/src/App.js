@@ -56,7 +56,6 @@ const App = () => {
         />
         <Stack.Screen name="Profile" component={ProfileScreen} />
         <Stack.Screen name="Register" component={Register} />
-
         <Stack.Screen name="Dashboard" component={Dashboard} />
         <Stack.Screen name="Search Recipes" component={SearchRecipes} />
         <Stack.Screen name="Add Recipes" component={AddRecipes} />
@@ -85,6 +84,14 @@ const HomeScreen = ({navigation}) => {
   		title="Dashboard"
   		color="#50afff"
   		accessibilityLabel="Dashboard"/>
+	</View>
+
+    <View style={[{ width: "40%", margin: 20 }]}>
+		<Button
+  		onPress={() => navigation.navigate('Register', {name: 'TEMP_USERNAME'})}
+  		title="Register"
+  		color="#50afff"
+  		accessibilityLabel="Register"/>
 	</View>
 
 	<View style={[{ width: "40%", margin: 20 }]}>

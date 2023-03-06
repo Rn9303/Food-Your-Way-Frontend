@@ -1,5 +1,5 @@
 import React, {useState} from 'react';
-import './style.css'
+import './Register.css'
 function RegistrationForm() {
     return(
       <div className="form">
