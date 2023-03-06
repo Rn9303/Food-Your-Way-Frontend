@@ -2,10 +2,12 @@ import logo from './logo.svg';
 import './App.css';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import Dashboard from './Dashboard'
+import Register from './Register'
 import SearchRecipes from './SearchRecipes'
 import AddRecipes from './AddRecipes'
 import SavedRecipes from './SavedRecipes'
 import SuggestedRecipes from './SuggestedRecipes'
+import Register_header from './Register_header'
 
 import Preferences from './Preferences'
 
@@ -53,6 +55,8 @@ const App = () => {
           options={{title: 'Welcome'}}
         />
         <Stack.Screen name="Profile" component={ProfileScreen} />
+        <Stack.Screen name="Register" component={Register} />
+
         <Stack.Screen name="Dashboard" component={Dashboard} />
         <Stack.Screen name="Search Recipes" component={SearchRecipes} />
         <Stack.Screen name="Add Recipes" component={AddRecipes} />
