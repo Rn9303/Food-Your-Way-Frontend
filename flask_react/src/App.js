@@ -72,6 +72,16 @@ const HomeScreen = ({navigation}) => {
     <div className="App">
       <header className="App-header">
 
+
+    	<View style={[{ width: "19%", marginTop: "-18%", alignSelf: 'flex-end', flexDirection: "row" }]}>
+		<Button
+  		onPress={() => navigation.navigate('Register', {name: 'TEMP_USERNAME'})}
+  		title="Register/Login"
+  		
+  		accessibilityLabel="Register"/>
+	</View>
+
+
         <img src={logo} className="App-logo" alt="logo" />
 
         <p>
@@ -84,14 +94,6 @@ const HomeScreen = ({navigation}) => {
   		title="Dashboard"
   		color="#50afff"
   		accessibilityLabel="Dashboard"/>
-	</View>
-
-    <View style={[{ width: "40%", margin: 20 }]}>
-		<Button
-  		onPress={() => navigation.navigate('Register', {name: 'TEMP_USERNAME'})}
-  		title="Register"
-  		color="#50afff"
-  		accessibilityLabel="Register"/>
 	</View>
 
 	<View style={[{ width: "40%", margin: 20 }]}>
