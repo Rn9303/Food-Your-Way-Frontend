@@ -22,17 +22,20 @@ import {
   Alert,
 } from 'react-native';
 
-import {NavigationContainer} from '@react-navigation/native';
+import {NavigationContainer, useNavigation} from '@react-navigation/native';
 import {createNativeStackNavigator} from '@react-navigation/native-stack';
 
-const HomeScreen = ({navigation}) => {
-  return (
+class HomeScreen extends Component {
+
+  render() {
+     
+	return (
     <div className="App">
       <header className="App-header">
 	
     	<View style={[{ width: "19%", marginTop: "-16%", alignSelf: 'flex-end', flexDirection: "row" }]}>
 		<Button
-  		onPress={() => navigation.navigate('Logout', {name: 'TEMP_USERNAME'})}
+  		onPress={() => this.props.navigation.navigate('Register', {name: 'TEMP_USERNAME'})}
   		title="Register/Login"
   		accessibilityLabel="Register"/>
 	</View>	
@@ -45,7 +48,7 @@ const HomeScreen = ({navigation}) => {
 
     <View style={[{ width: "40%", margin: 20 }]}>
 		<Button
-  		onPress={() => navigation.navigate('Dashboard', {name: 'TEMP_USERNAME'})}
+  		onPress={() => this.props.navigation.navigate('Dashboard', {name: 'TEMP_USERNAME'})}
   		title="Dashboard"
   		color="#50afff"
   		accessibilityLabel="Dashboard"/>
@@ -53,7 +56,7 @@ const HomeScreen = ({navigation}) => {
 
 	<View style={[{ width: "40%", margin: 20 }]}>
 		<Button
-  		onPress={() => navigation.navigate('Search Recipes', {name: 'TEMP_USERNAME'})}
+  		onPress={() => this.props.navigation.navigate('Search Recipes', {name: 'TEMP_USERNAME'})}
   		title="Search Recipes"
   		color="#50afff"
   		accessibilityLabel="Search for recipes"/>
@@ -61,7 +64,7 @@ const HomeScreen = ({navigation}) => {
 
 	<View style={[{ width: "40%", margin: 20 }]}>
 		<Button
-  		onPress={() => navigation.navigate('Add Recipes', {name: 'TEMP_USERNAME'})}
+  		onPress={() => this.props.navigation.navigate('Add Recipes', {name: 'TEMP_USERNAME'})}
   		title="Add Recipes"
   		color="#50afff"
   		accessibilityLabel="Add new recipes"/>
@@ -69,7 +72,7 @@ const HomeScreen = ({navigation}) => {
 
     <View style={[{ width: "40%", margin: 20 }]}>
 		<Button
-  		onPress={() => navigation.navigate('Saved Recipes', {name: 'TEMP_USERNAME'})}
+  		onPress={() => this.props.navigation.navigate('Saved Recipes', {name: 'TEMP_USERNAME'})}
   		title="Saved Recipes"
   		color="#50afff"
   		accessibilityLabel="Saved Recipes"/>
@@ -77,7 +80,7 @@ const HomeScreen = ({navigation}) => {
 
 	<View style={[{ width: "40%", margin: 20 }]}>
 		<Button
-  		onPress={() => navigation.navigate('Suggested Recipes', {name: 'TEMP_USERNAME'})}
+  		onPress={() => this.props.navigation.navigate('Suggested Recipes', {name: 'TEMP_USERNAME'})}
   		title="Suggested Recipes"
   		color="#50afff"
   		accessibilityLabel="Suggested recipes based on search"/>
@@ -86,6 +89,15 @@ const HomeScreen = ({navigation}) => {
       </header>
     </div>
   );
-};
+
+  }
+	
+}
 
 export default HomeScreen;
+
+
+
+
+  
+
