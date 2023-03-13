@@ -36,7 +36,7 @@ class HomeScreen extends Component {
     	<View style={[{ width: "19%", marginTop: "-16%", alignSelf: 'flex-end', flexDirection: "row" }]}>
 		<Button
   		onPress={() => this.props.navigation.navigate('Register', {name: 'TEMP_USERNAME'})}
-  		title="Register"
+  		title="Register    |"
   		accessibilityLabel="Register"/>
 		<Button
   		onPress={() => this.props.navigation.navigate('Login', {name: 'TEMP_USERNAME'})}
