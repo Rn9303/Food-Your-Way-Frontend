@@ -1,8 +1,11 @@
 import React, {useState} from 'react';
 import './Register.css'
+import Register_header from './Register_header'
 function RegistrationForm() {
     return(
       <div className="form">
+          <Register_header>
+          </Register_header>
           <div className="form-body">
               <div className="username">
                   <label className="form__label" for="firstName">First Name </label>

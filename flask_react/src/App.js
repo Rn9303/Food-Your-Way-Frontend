@@ -8,7 +8,6 @@ import SearchRecipes from './SearchRecipes'
 import AddRecipes from './AddRecipes'
 import SavedRecipes from './SavedRecipes'
 import SuggestedRecipes from './SuggestedRecipes'
-import Register_header from './Register_header'
 import Preferences from './Preferences'
 import HomeScreen from './HomeScreen'
 import React, {Component} from 'react';
