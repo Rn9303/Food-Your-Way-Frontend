@@ -1,14 +1,16 @@
 # FOOD YOUR WAY
 
+RN Guide:
+https://dev.to/nagatodev/how-to-connect-flask-to-reactjs-1k8i
+https://www.youtube.com/watch?v=8RyEb02BdHA&ab_channel=ReactNativeSchool
+
+
 Description:
 A recipe database that makes looking up recipes by filters simple and easy for everyone. Enabling search by lifestyle, diet, or even ingredients (to either include or exclude specific ingredients). Utilizes MongoDB utilizing either MongoDB atlas or a local server running in a docker container.
 
 ROUGH USER FLOW:
 - able to request recipe search using specific filters and receive back list of matching recipes
 - once a recipe is chosen, user is able to receive the specific details of that recipe and instructions
-
-Tip: When adding new js libraries to react native, try to figure them out all beforehand and see if they work together.
-Saves a HUGE amount of headache in my experience.
 
 Front-End Repo Link: https://github.com/agm316/Food-Your-Way-Frontend
 
@@ -31,9 +33,6 @@ TO DO:
 - finish db and connect it to "front-end" (also WIP)
 - make recipe search bar (setup react for UI after this works)
 - will add specific filters (certain amount of calories, allergies, vegetarian/vegan options)
-
-RN Guide:
-https://dev.to/nagatodev/how-to-connect-flask-to-reactjs-1k8i
 
 
 Authors:
