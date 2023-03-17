@@ -49,20 +49,25 @@ const Stack = createNativeStackNavigator();
 const App = () => {
 
   const [isLoading, setIsLoading] = React.useState(true);
+  const [user, setUser] = React.useState(null);
   
   React.useEffect(() => {
     setTimeout( () => {
        setIsLoading(!isLoading);
+       setUser("auth partially works!");
     }, 500);
   }, []);
 
   return (
     <NavigationContainer>
       <Stack.Navigator>
+
+	
+
         <Stack.Screen
           name="Home"
           component={HomeScreen}
-          options={{title: 'Welcome'}}
+          options={{title: user}}
         />
         <Stack.Screen name="Profile" component={ProfileScreen} />
         <Stack.Screen name="Register" component={Register} />
