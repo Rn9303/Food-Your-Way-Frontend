@@ -11,6 +11,7 @@ import Register_header from './Register_header'
 
 import Preferences from './Preferences'
 
+import UserContext from './UserContext.js'
 
 import React, {Component} from 'react';
 import {
@@ -26,7 +27,7 @@ import {NavigationContainer, useNavigation} from '@react-navigation/native';
 import {createNativeStackNavigator} from '@react-navigation/native-stack';
 
 class HomeScreen extends Component {
-
+  static contextType = UserContext;
   render() {
      
 	return (
@@ -90,7 +91,7 @@ class HomeScreen extends Component {
   		accessibilityLabel="Suggested recipes based on search"/>
 	</View>
 
-	<Text> HEKK {this.props.user} </Text>
+	<Text> Current User: {this.context} </Text>
 
       </header>
     </div>
