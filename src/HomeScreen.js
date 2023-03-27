@@ -90,6 +90,8 @@ class HomeScreen extends Component {
   		accessibilityLabel="Suggested recipes based on search"/>
 	</View>
 
+	<Text> HEKK {this.props.user} </Text>
+
       </header>
     </div>
   );
