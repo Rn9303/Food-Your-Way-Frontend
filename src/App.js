@@ -13,6 +13,7 @@ import Register_header from './Register_header'
 import Preferences from './Preferences'
 import HomeScreen from './HomeScreen'
 
+import UserContext from './UserContext.js'
 
 import React, {Component} from 'react';
 import {
@@ -60,6 +61,7 @@ const App = () => {
   }, []);
 
   return (
+  <UserContext.Provider value="testuser">
     <NavigationContainer>
       <Stack.Navigator>
 
@@ -79,6 +81,7 @@ const App = () => {
 
       </Stack.Navigator>
     </NavigationContainer>
+   </UserContext.Provider>
   );
 };
 
