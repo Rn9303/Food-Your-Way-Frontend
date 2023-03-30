@@ -61,7 +61,7 @@ const App = () => {
   }, []);
 
   return (
-  <UserContext.Provider value="testuser">
+  <UserContext.Provider value={user}>
     <NavigationContainer>
       <Stack.Navigator>
 
