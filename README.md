@@ -1,5 +1,9 @@
 # FOOD YOUR WAY
 
+
+
+
+
 RN Guide:
 https://dev.to/nagatodev/how-to-connect-flask-to-reactjs-1k8i
 https://www.youtube.com/watch?v=8RyEb02BdHA&ab_channel=ReactNativeSchool
@@ -28,11 +32,9 @@ Future goals:
 [Future TO DOs](FurtherGoals.md)
 
 TO DO:
-- add login page and user specific data
-- connect react native to endpoints and database
-- finish db and connect it to "front-end" (also WIP)
-- make recipe search bar (setup react for UI after this works)
-- will add specific filters (certain amount of calories, allergies, vegetarian/vegan options)
+- finish login/auth flow
+- connect login to backend
+- connect list recipes to backend
 
 
 Authors:
