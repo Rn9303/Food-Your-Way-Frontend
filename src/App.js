@@ -56,7 +56,7 @@ const App = () => {
   React.useEffect(() => {
     setTimeout( () => {
        setIsLoading(!isLoading);
-       setUser("auth partially works!");
+       setUser("admin");
     }, 500);
   }, []);
 
