@@ -1,8 +1,13 @@
 import React, {useState} from 'react';
 import './Register.css'
+import './App.css';
 import Register_header from './Register_header'
 function RegistrationForm() {
     return(
+
+    <div className="App">
+	<header className="App-header">
+
       <div className="form">
           <Register_header>
           </Register_header>
@@ -36,6 +41,10 @@ function RegistrationForm() {
               <button type="submit" class="btn">Register</button>
           </div>
       </div>
+
+	</header>
+    </div>
+
     )
 }
 export default RegistrationForm;
