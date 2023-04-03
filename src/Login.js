@@ -6,7 +6,7 @@ export default function Login() {
   return(
     <div className="App">
 	<header className="App-header">
-
+		<div className="login-wrapper">
       <h1>Please Log In</h1>
       <form>
         <label>
@@ -22,6 +22,7 @@ export default function Login() {
         </div>
       </form>
 
+		</div>
 	</header>
     </div>
   )
