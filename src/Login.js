@@ -1,9 +1,12 @@
 import React from 'react';
 import './Login.css';
+import './App.css';
 
 export default function Login() {
   return(
-    <div className="login-wrapper">
+    <div className="App">
+	<header className="App-header">
+
       <h1>Please Log In</h1>
       <form>
         <label>
@@ -18,6 +21,8 @@ export default function Login() {
           <button type="submit">Submit</button>
         </div>
       </form>
+
+	</header>
     </div>
   )
 }
