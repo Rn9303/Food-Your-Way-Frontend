@@ -40,3 +40,18 @@
 .wrapper {
   padding: 20px;
 }
+
+.button-link {
+  display: inline-block;
+  background-color: #50afff;
+  color: white;
+  padding: 6px 12px;
+  border-radius: 4px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px;
+}
+
+.button-link:hover {
+  background-color: #4090dd;
+}

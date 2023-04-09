@@ -1,6 +1,6 @@
 import logo from './logo.svg';
 import './App.css';
-import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import { BrowserRouter, Route, Routes, Link} from 'react-router-dom';
 import Dashboard from './Dashboard'
 import Register from './Register'
 import SearchRecipes from './SearchRecipes'
@@ -8,6 +8,8 @@ import AddRecipes from './AddRecipes'
 import SavedRecipes from './SavedRecipes'
 import SuggestedRecipes from './SuggestedRecipes'
 import Register_header from './Register_header'
+import ReactDOM from 'react-dom';
+import App from './App';
 
 import Preferences from './Preferences'
 
@@ -89,6 +91,14 @@ class HomeScreen extends Component {
   		title="Suggested Recipes"
   		color="#50afff"
   		accessibilityLabel="Suggested recipes based on search"/>
+	</View>
+
+	<View style={[{ width: "40%", margin: 20 }]}>
+		<Button
+  		onPress={() => this.props.navigation.navigate('HATEOAS', {name: 'TEMP_USERNAME'})}
+  		title="HATEOAS Dropdown"
+  		color="#50afff"
+  		accessibilityLabel="hateoas dropdown menu"/>
 	</View>
 
 	<Text> Current User: {this.context} </Text>
