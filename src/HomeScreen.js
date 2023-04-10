@@ -36,7 +36,7 @@ class HomeScreen extends Component {
     <div className="App">
       <header className="App-header">
 	
-    	<View style={[{ width: "19%", marginTop: "-16%", alignSelf: 'flex-end', flexDirection: "row" }]}>
+    	<View style={[{ width: "19%", marginTop: "-10%", alignSelf: 'flex-end', flexDirection: "row"}]}>
 		<Button
   		onPress={() => this.props.navigation.navigate('Register', {name: 'TEMP_USERNAME'})}
   		title="Register    |"
@@ -98,7 +98,7 @@ class HomeScreen extends Component {
   		onPress={() => this.props.navigation.navigate('HATEOAS', {name: 'TEMP_USERNAME'})}
   		title="HATEOAS Dropdown"
   		color="#50afff"
-  		accessibilityLabel="hateoas dropdown menu"/>
+  		accessibilityLabel="Hateoas Dropdown Menu"/>
 	</View>
 
 	<Text> Current User: {this.context} </Text>

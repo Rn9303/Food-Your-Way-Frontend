@@ -8,7 +8,6 @@ import SearchRecipes from './SearchRecipes'
 import AddRecipes from './AddRecipes'
 import SavedRecipes from './SavedRecipes'
 import SuggestedRecipes from './SuggestedRecipes'
-import Register_header from './Register_header'
 import Hateoas from './Hateoas';
 
 import Preferences from './Preferences'
@@ -84,22 +83,3 @@ const WebRouteExample = () => {
 };
 
 export default App;
-
-
-// function Page() {
-//   return (
-//     <div className="wrapper">
-//       <h1>Application</h1>
-//       <BrowserRouter>
-//         <Routes>
-//           <Route path="/dashboard">
-//             <Dashboard />
-//           </Route>
-//           <Route path="/preferences">
-//             <Preferences />
-//           </Route>
-//         </Routes>
-//       </BrowserRouter>
-//     </div>
-//   );
-// }
