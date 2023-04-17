@@ -4,7 +4,7 @@ TO DO:
 - connect login to heroku
 - connect list recipes to backend
 NOTE: Rather than start from search, I think we can add a filter tab with different settings
-using the existing HATEOAS demo that Ara made.
+using the existing HATEOAS demo
 
 
 
