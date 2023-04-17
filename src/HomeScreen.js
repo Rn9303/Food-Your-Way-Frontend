@@ -63,11 +63,11 @@ class HomeScreen extends Component {
 
 	<View style={[{ width: "40%", margin: 20 }]}>
 		<Button
-  		onPress={() => this.props.navigation.navigate('Search Recipes', {name: 'TEMP_USERNAME'})}
-  		title="Search Recipes"
+  		onPress={() => this.props.navigation.navigate('HATEOAS', {name: 'TEMP_USERNAME'})}
+  		title="HATEOAS Dropdown"
   		color="#50afff"
-  		accessibilityLabel="Search for recipes"/>
-	</View> 
+  		accessibilityLabel="Hateoas Dropdown Menu"/>
+	</View>
 
 	<View style={[{ width: "40%", margin: 20 }]}>
 		<Button
@@ -93,15 +93,9 @@ class HomeScreen extends Component {
   		accessibilityLabel="Suggested recipes based on search"/>
 	</View>
 
-	<View style={[{ width: "40%", margin: 20 }]}>
-		<Button
-  		onPress={() => this.props.navigation.navigate('HATEOAS', {name: 'TEMP_USERNAME'})}
-  		title="HATEOAS Dropdown"
-  		color="#50afff"
-  		accessibilityLabel="Hateoas Dropdown Menu"/>
-	</View>
 
-	<Text> Current User: {this.context} </Text>
+        
+	<Text style={{fontSize: 16, color: "#ffffff"}}> Current User: {this.context} </Text>
 
       </header>
     </div>
