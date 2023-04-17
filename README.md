@@ -32,10 +32,8 @@ Future goals:
 [Future TO DOs](FurtherGoals.md)
 
 TO DO:
-- finish login/auth flow
-- connect login to backend
+- connect login to heroku
 - connect list recipes to backend
-
 
 Authors:
 - Roman Negri
