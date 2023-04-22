@@ -1,15 +1,8 @@
 import React from 'react';
-import {
-  StyleSheet,
-  Button,
-  View,
-  SafeAreaView,
-  Text,
-  Alert,
-} from 'react-native';
 
-const Dashboard = ({navigation, route}) => {
-  return <Text> Dashboard screen! {route.params.name}'s profile</Text>;
+const Dashboard = () => {
+  // You can replace "User" with the actual user's name.
+  return <div>Dashboard screen! User's profile</div>;
 };
 
 export default Dashboard;

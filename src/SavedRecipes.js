@@ -1,15 +1,9 @@
+// SavedRecipes.js
 import React from 'react';
-import {
-  StyleSheet,
-  Button,
-  View,
-  SafeAreaView,
-  Text,
-  Alert,
-} from 'react-native';
 
-const SavedRecipes = ({navigation, route}) => {
-  return <Text> Saved recipes screen! {route.params.name}'s profile</Text>;
+const SavedRecipes = () => {
+  // You can replace "User" with the actual user's name.
+  return <div>Saved recipes screen! User's profile</div>;
 };
 
 export default SavedRecipes;

@@ -1,15 +1,9 @@
+// SuggestedRecipes.js
 import React from 'react';
-import {
-  StyleSheet,
-  Button,
-  View,
-  SafeAreaView,
-  Text,
-  Alert,
-} from 'react-native';
 
-const SuggestedRecipes = ({navigation, route}) => {
-  return <Text> Suggested recipes screen! {route.params.name}'s profile</Text>;
+const SuggestedRecipes = () => {
+  // You can replace "User" with the actual user's name.
+  return <div>Suggested recipes screen! User's profile</div>;
 };
 
 export default SuggestedRecipes;

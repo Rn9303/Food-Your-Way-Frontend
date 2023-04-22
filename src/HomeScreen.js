@@ -1,114 +1,49 @@
+import React, { useContext } from 'react';
 import logo from './logo.svg';
-import './App.css';
-import { BrowserRouter, Route, Routes, Link} from 'react-router-dom';
-import Dashboard from './Dashboard'
-import Register from './Register'
-import SearchRecipes from './SearchRecipes'
-import AddRecipes from './AddRecipes'
-import SavedRecipes from './SavedRecipes'
-import SuggestedRecipes from './SuggestedRecipes'
-import Register_header from './Register_header'
-import ReactDOM from 'react-dom';
-import App from './App';
+import './HomeScreen.css';
+import { useNavigate } from 'react-router-dom';
+import UserContext from './UserContext';
 
-import Preferences from './Preferences'
+const HomeScreen = () => {
+  const currentUser = useContext(UserContext);
+  const navigate = useNavigate();
 
-import UserContext from './UserContext.js'
+  const navigateTo = (route) => {
+    navigate(route, { state: { name: 'TEMP_USERNAME' } });
+  };
 
-import React, {Component} from 'react';
-import {
-  StyleSheet,
-  Button,
-  View,
-  SafeAreaView,
-  Text,
-  Alert,
-} from 'react-native';
+  return (
+    <div className="home-screen">
+      <header className="home-screen-header">
+        <div className="buttons-container">
+          <button onClick={() => navigateTo('/Register')}>Register |</button>
+          <button onClick={() => navigateTo('/Login')}>Login</button>
+        </div>
 
-import {NavigationContainer, useNavigation} from '@react-navigation/native';
-import {createNativeStackNavigator} from '@react-navigation/native-stack';
+        <img src={logo} className="home-screen-logo" alt="logo" />
 
-class HomeScreen extends Component {
-  static contextType = UserContext;
-  render() {
-     
-	return (
-    <div className="App">
-      <header className="App-header">
-	
-    	<View style={[{ width: "19%", marginTop: "-10%", alignSelf: 'flex-end', flexDirection: "row"}]}>
-		<Button
-  		onPress={() => this.props.navigation.navigate('Register', {name: 'TEMP_USERNAME'})}
-  		title="Register    |"
-  		accessibilityLabel="Register"/>
-		<Button
-  		onPress={() => this.props.navigation.navigate('Login', {name: 'TEMP_USERNAME'})}
-  		title="Login"
-  		accessibilityLabel="Login"/>
-		</View>
+        <p>Food Your Way</p>
 
-        <img src={logo} className="App-logo" alt="logo" />
+        <button className="nav-button" onClick={() => navigateTo('/Dashboard')}>
+          Dashboard
+        </button>
+        <button className="nav-button" onClick={() => navigateTo('/HATEOAS')}>
+          HATEOAS Dropdown
+        </button>
+        <button className="nav-button" onClick={() => navigateTo('/AddRecipes')}>
+          Add Recipes
+        </button>
+        <button className="nav-button" onClick={() => navigateTo('/SavedRecipes')}>
+          Saved Recipes
+        </button>
+        <button className="nav-button" onClick={() => navigateTo('/SuggestedRecipes')}>
+          Suggested Recipes
+        </button>
 
-        <p>
-          Food Your Way
-        </p>
-
-    <View style={[{ width: "40%", margin: 20 }]}>
-		<Button
-  		onPress={() => this.props.navigation.navigate('Dashboard', {name: 'TEMP_USERNAME'})}
-  		title="Dashboard"
-  		color="#50afff"
-  		accessibilityLabel="Dashboard"/>
-	</View>
-
-	<View style={[{ width: "40%", margin: 20 }]}>
-		<Button
-  		onPress={() => this.props.navigation.navigate('HATEOAS', {name: 'TEMP_USERNAME'})}
-  		title="HATEOAS Dropdown"
-  		color="#50afff"
-  		accessibilityLabel="Hateoas Dropdown Menu"/>
-	</View>
-
-	<View style={[{ width: "40%", margin: 20 }]}>
-		<Button
-  		onPress={() => this.props.navigation.navigate('Add Recipes', {name: 'TEMP_USERNAME'})}
-  		title="Add Recipes"
-  		color="#50afff"
-  		accessibilityLabel="Add new recipes"/>
-	</View>
-
-    <View style={[{ width: "40%", margin: 20 }]}>
-		<Button
-  		onPress={() => this.props.navigation.navigate('Saved Recipes', {name: 'TEMP_USERNAME'})}
-  		title="Saved Recipes"
-  		color="#50afff"
-  		accessibilityLabel="Saved Recipes"/>
-	</View>
-
-	<View style={[{ width: "40%", margin: 20 }]}>
-		<Button
-  		onPress={() => this.props.navigation.navigate('Suggested Recipes', {name: 'TEMP_USERNAME'})}
-  		title="Suggested Recipes"
-  		color="#50afff"
-  		accessibilityLabel="Suggested recipes based on search"/>
-	</View>
-
-
-        
-	<Text style={{fontSize: 16, color: "#ffffff"}}> Current User: {this.context} </Text>
-
+        <p className="current-user">Current User: {currentUser}</p>
       </header>
     </div>
   );
-
-  }
-	
-}
+};
 
 export default HomeScreen;
-
-
-
-
-  
-

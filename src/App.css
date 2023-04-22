@@ -37,6 +37,10 @@
   }
 }
 
+body {
+  background-color: #f4f4f4 !important;
+}
+
 .wrapper {
   padding: 20px;
 }

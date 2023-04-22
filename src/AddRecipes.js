@@ -1,15 +1,8 @@
 import React from 'react';
-import {
-  StyleSheet,
-  Button,
-  View,
-  SafeAreaView,
-  Text,
-  Alert,
-} from 'react-native';
 
-const AddRecipes = ({navigation, route}) => {
-  return <Text> Add new recipes screen! {route.params.name}'s profile</Text>;
+const AddRecipes = () => {
+  // You can replace "User" with the actual user's name.
+  return <div>Add new recipes screen! User's profile</div>;
 };
 
 export default AddRecipes;
