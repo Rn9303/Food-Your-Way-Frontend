@@ -1,5 +1,5 @@
 import React, { useContext } from 'react';
-import logo from './logo.svg';
+import logo from './fyw.png';
 import './HomeScreen.css';
 import { useNavigate } from 'react-router-dom';
 import UserContext from './UserContext';
@@ -22,23 +22,31 @@ const HomeScreen = () => {
 
         <img src={logo} className="home-screen-logo" alt="logo" />
 
-        <p>Food Your Way</p>
+        <h1 className="middletitle">Food Your Way</h1>
+        <div className="middle">
+	        
 
-        <button className="nav-button" onClick={() => navigateTo('/Dashboard')}>
-          Dashboard
-        </button>
-        <button className="nav-button" onClick={() => navigateTo('/HATEOAS')}>
-          HATEOAS Dropdown
-        </button>
-        <button className="nav-button" onClick={() => navigateTo('/AddRecipes')}>
-          Add Recipes
-        </button>
-        <button className="nav-button" onClick={() => navigateTo('/SavedRecipes')}>
-          Saved Recipes
-        </button>
-        <button className="nav-button" onClick={() => navigateTo('/SuggestedRecipes')}>
-          Suggested Recipes
-        </button>
+	        <div className="nav-buttons">
+	          <button className="nav-button" onClick={() => navigateTo('/Search')}>
+	            Search
+	          </button>
+	          <button className="nav-button" onClick={() => navigateTo('/Dashboard')}>
+	            Dashboard
+	          </button>
+	          <button className="nav-button" onClick={() => navigateTo('/HATEOAS')}>
+	            HATEOAS Dropdown
+	          </button>
+	          <button className="nav-button" onClick={() => navigateTo('/AddRecipes')}>
+	            Add Recipes
+	          </button>
+	          <button className="nav-button" onClick={() => navigateTo('/SavedRecipes')}>
+	            Saved Recipes
+	          </button>
+	          <button className="nav-button" onClick={() => navigateTo('/SuggestedRecipes')}>
+	            Suggested Recipes
+	          </button>
+	        </div>
+	       </div>
 
         <p className="current-user">Current User: {currentUser}</p>
       </header>
