@@ -30,19 +30,19 @@ const HomeScreen = () => {
 	          <button className="nav-button" onClick={() => navigateTo('/Search')}>
 	            Search
 	          </button>
-	          <button className="nav-button" onClick={() => navigateTo('/Dashboard')}>
+	          <button className="nav-button-incomplete" onClick={() => navigateTo('/Dashboard')}>
 	            Dashboard
 	          </button>
 	          <button className="nav-button" onClick={() => navigateTo('/HATEOAS')}>
 	            HATEOAS Dropdown
 	          </button>
-	          <button className="nav-button" onClick={() => navigateTo('/AddRecipes')}>
+	          <button className="nav-button-incomplete" onClick={() => navigateTo('/AddRecipes')}>
 	            Add Recipes
 	          </button>
-	          <button className="nav-button" onClick={() => navigateTo('/SavedRecipes')}>
+	          <button className="nav-button-incomplete" onClick={() => navigateTo('/SavedRecipes')}>
 	            Saved Recipes
 	          </button>
-	          <button className="nav-button" onClick={() => navigateTo('/SuggestedRecipes')}>
+	          <button className="nav-button-incomplete" onClick={() => navigateTo('/SuggestedRecipes')}>
 	            Suggested Recipes
 	          </button>
 	        </div>
