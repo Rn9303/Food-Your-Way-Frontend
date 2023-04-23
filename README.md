@@ -1,10 +1,8 @@
 # FOOD YOUR WAY
 
 TO DO:
+- use relative positioning to make react work on all screen sizes/computers
 - connect login to heroku
-- connect list recipes to backend
-NOTE: Rather than start from search, I think we can add a filter tab with different settings
-using the existing HATEOAS demo
 
 
 
