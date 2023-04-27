@@ -10,7 +10,7 @@ const Hateoas = () => {
   const [isLoading, setIsLoading] = useState(false);
 
   useEffect(() => {
-    axios.get('https://food-your-way.herokuapp.com/search_hateoas')
+    axios.get('https://food-your-way.herokuapp.com/recipes/searchHateoas')
       .then(response => {
         setEndpoints(response.data.Choices);
       });
