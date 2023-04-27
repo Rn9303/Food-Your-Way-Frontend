@@ -2,7 +2,7 @@ import React from 'react';
 
 const AddRecipes = () => {
   // You can replace "User" with the actual user's name.
-  return <div>Add new recipes screen! User's profile</div>;
+  return <div>UNDER CONSTRUCTION CHECK BACK SOON</div>;
 };
 
 export default AddRecipes;
