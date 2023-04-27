@@ -23,7 +23,7 @@ const Search = () => {
     setTimeout(() => {
       const searchString = `${name};:;${include ? include : ''}${include && exclude ? ';:;' : ''}${exclude ? exclude : ''}`;
       axios
-        .get(`https://food-your-way.herokuapp.com/searchIncExc/${searchString}`)
+        .get(`https://food-your-way.herokuapp.com/recipes/searchIncExc/${searchString}`)
         .then((response) => {
           setRecipes(response.data);
           setIsLoading(false);
