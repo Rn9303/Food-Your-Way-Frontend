@@ -27,7 +27,7 @@ const Hateoas = () => {
     if (selectedEndpoint) {
       setIsLoading(true);
       const endpoint = endpoints[selectedEndpoint];
-      axios[endpoint.method](`https://food-your-way.herokuapp.com${endpoint.url}`)
+      axios[endpoint.method](`https://food-your-way.herokuapp.com/recipes/${endpoint.url}`)
         .then(response => {
           setOutput(response.data);
           setIsLoading(false);
