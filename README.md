@@ -1,14 +1,9 @@
 # FOOD YOUR WAY
 
-TO DO:
-- use relative positioning to make react work on all screen sizes/computers
-- connect login to heroku
-
-
-
-RN Guide:
-https://dev.to/nagatodev/how-to-connect-flask-to-reactjs-1k8i
-https://www.youtube.com/watch?v=8RyEb02BdHA&ab_channel=ReactNativeSchool
+FINAL PRESENTATION UPDATE:
+We have finished most of the foundational features in Food Your Way.
+For future commits we might polish the search function with sleeker UI
+or add more search options.
 
 
 Description:
