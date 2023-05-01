@@ -12,6 +12,14 @@ function RegistrationForm() {
           <Register_header>
           </Register_header>
           <div className="form-body">
+              <div className="firstName">
+                  <label className="form__label" htmlFor="firstName">First Name </label>
+                  <input className="form__input" type="text" id="firstName" placeholder="First Name"/>
+              </div>
+              <div className="lastName">
+                  <label className="form__label" htmlFor="lastName">Last Name </label>
+                  <input className="form__input" type="text" id="lastName" placeholder="Last Name"/>
+              </div>
               <div className="email">
                   <label className="form__label" for="email">Email </label>
                   <input className="form__input" type="email" id="email" placeholder="Email"/>
