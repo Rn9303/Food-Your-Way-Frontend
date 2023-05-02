@@ -7,7 +7,7 @@ function RegistrationForm() {
     return(
 
     <div className="App">
-	    <header className="App-header">
+	<header className="App-header">
 
       <div className="form">
           <Register_header>
@@ -43,7 +43,7 @@ function RegistrationForm() {
           </div>
       </div>
 
-	    </header>
+	</header>
     </div>
 
     )
