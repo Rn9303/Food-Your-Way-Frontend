@@ -4,8 +4,6 @@ import './Register.css'
 import './App.css';
 import Register_header from './Register_header'
 function RegistrationForm() {
-    var bodyFormData = new FormData();
-    bodyFormData.append('firstName', 'lastName', 'email', 'username', 'password', 'confirmPassword')
     return(
 
     <div className="App">
