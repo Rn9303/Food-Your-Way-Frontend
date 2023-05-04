@@ -16,7 +16,7 @@ const HomeScreen = () => {
     <div className="home-screen">
       <header className="home-screen-header">
         <div className="buttons-container">
-          <button onClick={() => navigateTo('/Register')}>Register |</button>
+          <button onClick={() => navigateTo('/Register')}>Register</button>
           <button onClick={() => navigateTo('/Login')}>Login</button>
         </div>
 
