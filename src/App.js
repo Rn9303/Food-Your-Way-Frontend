@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Routes, useLocation } from 'react-router-dom';
 import AddRecipes from './AddRecipes';
 import SavedRecipes from './SavedRecipes';
 import SuggestedRecipes from './SuggestedRecipes';
@@ -11,11 +11,9 @@ import Login from './Login.js'
 import Register from './Register.js'
 import Search from './Search.js'
 
-const App = () => {
-  const [user, setUser] = React.useState("admin");
-
+function App(props) {
   return (
-    <UserContext.Provider value={user}>
+    <UserContext.Provider value={props.username}>
       <Router>
         <Routes>
           <Route path="/" element={<HomeScreen />} />
