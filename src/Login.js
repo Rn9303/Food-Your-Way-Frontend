@@ -3,6 +3,7 @@ import axios from 'axios';
 import { useNavigate } from 'react-router-dom';
 import './Login.css';
 import './App.css';
+import Login_header from './Login_header';
 // Import any other required components or styles
 import UserContext from './UserContext';
 
@@ -39,7 +40,7 @@ function LoginForm() {
     <div className="App">
       <header className="App-header">
         <form onSubmit={handleSubmit} className="form">
-          {/* Add your login header component if needed */}
+          <Login_header />
           <div className="form-body">
             <div className="username">
               <label className="form__label" htmlFor="username">Username </label>
