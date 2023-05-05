@@ -4,6 +4,9 @@ import { useNavigate } from 'react-router-dom';
 import './Login.css';
 import './App.css';
 // Import any other required components or styles
+import UserContext from './UserContext';
+
+
 
 function LoginForm() {
   const [formData, setFormData] = useState({
@@ -25,7 +28,7 @@ function LoginForm() {
       console.log(response);
 
       // Redirect to the homepage on successful login
-      navigate('/');
+      navigate('/', {username: formData.username});
     } catch (error) {
       console.error('Login error:', error);
       // Handle login errors here
